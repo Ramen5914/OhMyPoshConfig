@@ -13,8 +13,8 @@
           "type": "shell"
         },
         {
-          "background": "#ef5350",
-          "foreground": "#FFFB38",
+          "background": "#7554a4",
+          "foreground": "#ffffff",
           "style": "diamond",
           "template": "<parentBackground>\ue0b0</> \uf292 ",
           "type": "root"
