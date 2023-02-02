@@ -52,8 +52,8 @@
           "type": "git"
         },
         {
-          "background": "#83769c",
-          "foreground": "#ffffff",
+          "background": "#B9F3FC",
+          "foreground": "#2d3436",
           "properties": {
             "style": "roundrock",
             "threshold": 0
