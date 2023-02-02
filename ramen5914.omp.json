@@ -6,7 +6,7 @@
       "segments": [
         {
           "background": "#fedeff",
-          "foreground": "#000000",
+          "foreground": "#2d3436",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "style": "diamond",
           "template": "\uf120 {{ .Name }} ",
@@ -20,7 +20,7 @@
           "type": "root"
         },
         {
-          "background": "#21fdd4",
+          "background": "#93C6E7",
           "foreground": "#2d3436",
           "powerline_symbol": "\ue0b0",
           "properties": {
