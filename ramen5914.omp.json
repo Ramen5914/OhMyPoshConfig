@@ -253,7 +253,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#21c7c7",
+          "foreground": "#fedeff",
           "style": "plain",
           "template": "\u2570\u2500",
           "type": "text"
