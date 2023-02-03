@@ -210,7 +210,7 @@
             "windows": "\ue70f"
           },
           "style": "diamond",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}<#262626> \ue0b2</>",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}<transparent> \ue0b2</>",
           "type": "os"
         },
         {
@@ -229,7 +229,7 @@
             "discharging_icon": "\ue234 "
           },
           "style": "diamond",
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 <#262626>\ue0b2</>",
+          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 <transparent>\ue0b2</>",
           "type": "battery"
         },
         {
