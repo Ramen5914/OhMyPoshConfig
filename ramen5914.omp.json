@@ -229,7 +229,7 @@
             "discharging_icon": "\ue234 "
           },
           "style": "diamond",
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 <transparent>\ue0b2</>",
+          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}% <transparent>\ue0b2</>",
           "type": "battery"
         },
         {
