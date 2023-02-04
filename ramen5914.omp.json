@@ -48,7 +48,7 @@
             "fetch_upstream_icon": true
           },
           "style": "powerline",
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#80dbff> \uf044 {{ .Working.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#80ffee> \uf046 {{ .Staging.String }}</>{{ end }} ",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#000> \uf044 {{ .Working.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#000> \uf046 {{ .Staging.String }}</>{{ end }} ",
           "type": "git"
         },
         {
@@ -94,7 +94,7 @@
         },
         {
           "background": "#0e8ac8",
-          "foreground": "#ec2729",
+          "foreground": "#fff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
@@ -238,7 +238,7 @@
           "invert_powerline": true,
           "leading_diamond": "\ue0b2",
           "properties": {
-            "time_format": "_2,15:04"
+            "time_format": "1/2/06, 3:04 PM"
           },
           "style": "diamond",
           "template": " \uf5ef {{ .CurrentDate | date .Format }} ",
