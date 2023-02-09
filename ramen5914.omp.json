@@ -70,6 +70,21 @@
       "alignment": "right",
       "segments": [
         {
+          "type": "spotify",
+          "style": "diamond",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#1BD760",
+          "properties": {
+            "playing_icon": "\uE602 ",
+            "paused_icon": "\uF8E3 ",
+            "stopped_icon": "\uF04D "
+          },
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4 ",
+          "template": " {{ .Icon }}{{ if ne .Status \"stopped\" }}{{ .Track }}{{ end }} "
+        },
+        {
           "background": "#303030",
           "foreground": "#3C873A",
           "leading_diamond": "\ue0b6",
