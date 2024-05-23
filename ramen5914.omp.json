@@ -208,7 +208,7 @@
           "properties": {
             "linux": "\ue712",
             "macos": "\ue711",
-            "windows": "\ue70f"
+            "windows": "\ued04"
           },
           "style": "diamond",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
