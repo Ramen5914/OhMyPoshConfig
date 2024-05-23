@@ -5,22 +5,22 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#60448d",
-          "foreground": "#ffffff",
+          "background": "#5384b6",
+          "foreground": "#fff",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "style": "diamond",
           "template": "\uf120 {{ .Name }} ",
           "type": "shell"
         },
         {
-          "background": "#7554a4",
+          "background": "#5d94be",
           "foreground": "#ffffff",
           "style": "diamond",
           "template": "<parentBackground>\ue0b0</> \uf292 ",
           "type": "root"
         },
         {
-          "background": "#8963ba",
+          "background": "#5d94be",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -33,12 +33,12 @@
           "type": "path"
         },
         {
-          "background": "#bf8ac3",
+          "background": "#69a5c7",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#bf8ac3{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#bf8ac3{{ end }}",
-            "{{ if gt .Ahead 0 }}#bf8ac3{{ end }}",
-            "{{ if gt .Behind 0 }}#bf8ac3{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#69a5c7{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#69a5c7{{ end }}",
+            "{{ if gt .Ahead 0 }}#69a5c7{{ end }}",
+            "{{ if gt .Behind 0 }}#69a5c7{{ end }}"
           ],
           "foreground": "#2d3436",
           "powerline_symbol": "\ue0b0",
@@ -52,7 +52,7 @@
           "type": "git"
         },
         {
-          "background": "#feb9e0",
+          "background": "#73b5ce",
           "foreground": "#2d3436",
           "properties": {
             "style": "roundrock",
@@ -234,7 +234,7 @@
           "type": "battery"
         },
         {
-          "background": "#40c4ff",
+          "background": "#cf74a7",
           "foreground": "#ffffff",
           "invert_powerline": true,
           "leading_diamond": "\ue0b2",
@@ -254,7 +254,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#54428e",
+          "foreground": "#5384b6",
           "style": "plain",
           "template": "\u2570\u2500",
           "type": "text"
