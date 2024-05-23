@@ -234,7 +234,7 @@
           "type": "battery"
         },
         {
-          "background": "#cf74a7",
+          "background": "#5384b6",
           "foreground": "#ffffff",
           "invert_powerline": true,
           "leading_diamond": "\ue0b2",
