@@ -25,7 +25,7 @@
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_icon": " \uf07b ",
-            "home_icon": "\uf7dd",
+            "home_icon": "\uf015",
             "style": "folder"
           },
           "style": "powerline",
@@ -59,7 +59,7 @@
             "threshold": 0
           },
           "style": "diamond",
-          "template": " \ufa1e{{ .FormattedMs }}\u2800",
+          "template": " \ueba2 {{ .FormattedMs }}\u2800",
           "trailing_diamond": "\ue0b4",
           "type": "executiontime"
         }
@@ -76,7 +76,7 @@
           "properties": {
             "fetch_package_manager": true,
             "npm_icon": " <#cc3a3a>\ue5fa</> ",
-            "yarn_icon": " <#348cba>\uf61a</>"
+            "yarn_icon": " <#348cba>\ue6a7</>"
           },
           "style": "diamond",
           "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
@@ -94,7 +94,7 @@
         },
         {
           "background": "#0e8ac8",
-          "foreground": "#fff",
+          "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
@@ -115,7 +115,7 @@
           "foreground": "#06aad5",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "\ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "template": "\udb81\udfd3 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
           "trailing_diamond": "\ue0b4 ",
           "type": "go"
         },
@@ -196,7 +196,7 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "\ufd31 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
+          "template": "\uf308 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
           "trailing_diamond": "\ue0b4",
           "type": "kubectl"
         },
@@ -204,13 +204,14 @@
           "background": "#b2bec3",
           "foreground": "#222222",
           "leading_diamond": "\ue0b6",
+          "trailing_diamond": "<transparent,background>\ue0b2</>",
           "properties": {
             "linux": "\ue712",
             "macos": "\ue711",
             "windows": "\ue70f"
           },
           "style": "diamond",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}<transparent> \ue0b2</>",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
         {
@@ -222,26 +223,26 @@
           ],
           "foreground": "#262626",
           "invert_powerline": true,
-          "leading_diamond": "\ue0b2",
+          "powerline_symbol": "\ue0b2",
           "properties": {
-            "charged_icon": "\uf58e ",
+            "charged_icon": "\uf240 ",
             "charging_icon": "\uf1e6 ",
             "discharging_icon": "\ue234 "
           },
-          "style": "diamond",
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}% <transparent>\ue0b2</>",
+          "style": "powerline",
+          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 ",
           "type": "battery"
         },
         {
-          "background": "#8ec5f5",
-          "foreground": "#000000",
+          "background": "#40c4ff",
+          "foreground": "#ffffff",
           "invert_powerline": true,
           "leading_diamond": "\ue0b2",
           "properties": {
-            "time_format": "1/2/06, 03:04"
+            "time_format": "01/02/06, 15:04"
           },
           "style": "diamond",
-          "template": " \uf5ef {{ .CurrentDate | date .Format }} ",
+          "template": " \uf455 {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b4",
           "type": "time"
         }
@@ -260,13 +261,15 @@
         },
         {
           "foreground": "#e0f8ff",
-          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ef5350{{ end }}"
+          ],
           "properties": {
             "always_enabled": true
           },
           "style": "plain",
           "template": "\ue285 ",
-          "type": "exit"
+          "type": "status"
         }
       ],
       "type": "prompt"
