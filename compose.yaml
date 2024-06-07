@@ -1,0 +1,7 @@
+services: 
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: 124124
+      POSTGRES_USER: admin
+      POSTGRES_DB: main
