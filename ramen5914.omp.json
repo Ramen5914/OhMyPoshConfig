@@ -275,5 +275,11 @@
       "type": "prompt"
     }
   ],
-  "version": 2
+  "version": 2,
+  "upgrade": {
+    "notice": false,
+    "interval": "168h",
+    "auto": true,
+    "source": "cdn"
+  }
 }
