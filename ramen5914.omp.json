@@ -40,8 +40,8 @@
             "style": "folder"
           },
           "template": " \uf07b {{ .Path }} ",
-          "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
+          "foreground": "#000",
           "background": "#5d94be",
           "type": "path",
           "style": "powerline"
