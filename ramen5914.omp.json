@@ -264,22 +264,13 @@
             "windows": "\ued04"
           },
           "leading_diamond": "\ue0b6",
-          "trailing_diamond": "\ue0b4",
+          "trailing_diamond": "<transparent,background>\ue0b2</>",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "foreground": "#222222",
           "background": "#b2bec3",
           "type": "os",
           "style": "diamond"
         },
-        {
-          "type": "session",
-          "style": "diamond",
-          "foreground": "#ffffff",
-          "background": "#c386f1",
-          "leading_diamond": "\ue0b6",
-          "trailing_diamond": "<transparent,background>\ue0b2</>",
-          "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}"
-        }
         {
           "properties": {
             "cache_duration": "none",
