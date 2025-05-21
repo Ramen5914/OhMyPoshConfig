@@ -58,13 +58,7 @@
           "powerline_symbol": "\ue0b0",
           "background": "#69a5c7",
           "type": "git",
-          "style": "powerline",
-          "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#69a5c7{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#69a5c7{{ end }}",
-            "{{ if gt .Ahead 0 }}#69a5c7{{ end }}",
-            "{{ if gt .Behind 0 }}#69a5c7{{ end }}"
-          ]
+          "style": "powerline"
         },
         {
           "properties": {
@@ -285,25 +279,34 @@
             "cache_duration": "none",
             "charged_icon": "\uf240 ",
             "charging_icon": "\uf1e6 ",
-            "discharging_icon": "\ue234 "
+            "discharging_icon": "\udb85\udfdf "
           },
           "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 ",
-          "foreground": "#262626",
+          "foreground": "#000",
           "powerline_symbol": "\ue0b2",
           "background": "#f36943",
           "type": "battery",
           "style": "powerline",
           "background_templates": [
-            "{{if eq \"Charging\" .State.String}}#b8e994{{end}}",
-            "{{if eq \"Discharging\" .State.String}}#fff34e{{end}}",
-            "{{if eq \"Full\" .State.String}}#33DD2D{{end}}"
+            "{{if eq 100 .Percentage}}#44df30{{end}}",
+            "{{if gt .Percentage 90}}#66e235{{end}}",
+            "{{if gt .Percentage 80}}#88e63b{{end}}",
+            "{{if gt .Percentage 70}}#aae940{{end}}",
+            "{{if gt .Percentage 60}}#ccee46{{end}}",
+            "{{if gt .Percentage 50}}#eef14b{{end}}",
+            "{{if gt .Percentage 40}}#fee54d{{end}}",
+            "{{if gt .Percentage 30}}#fcc74b{{end}}",
+            "{{if gt .Percentage 20}}#faab4a{{end}}",
+            "{{if gt .Percentage 10}}#f88e47{{end}}",
+            "{{if gt .Percentage 0}}#f67246{{end}}",
+            "{{if eq 0 .Percentage}}#f45544{{end}}"
           ],
           "invert_powerline": true
         },
         {
           "properties": {
             "cache_duration": "none",
-            "time_format": "01/02/06, 15:04"
+            "time_format": "01/02/06 15:04"
           },
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b4",
