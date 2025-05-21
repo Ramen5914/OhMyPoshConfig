@@ -266,8 +266,8 @@
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "<transparent,background>\ue0b2</>",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          "foreground": "#222222",
-          "background": "#b2bec3",
+          "foreground": "#ffffff",
+          "background": "#73b5ce",
           "type": "os",
           "style": "diamond"
         },
