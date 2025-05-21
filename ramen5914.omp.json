@@ -17,7 +17,7 @@
           },
           "leading_diamond": "\u256d\u2500\ue0b6",
           "template": "\uf120 {{ .Name }} ",
-          "foreground": "#fff",
+          "foreground": "#000",
           "background": "#5384b6",
           "type": "shell",
           "style": "diamond"
@@ -27,7 +27,7 @@
             "cache_duration": "none"
           },
           "template": "<parentBackground>\ue0b0</> \uf292 ",
-          "foreground": "#ffffff",
+          "foreground": "#000",
           "background": "#5d94be",
           "type": "root",
           "style": "diamond"
@@ -54,7 +54,7 @@
             "fetch_upstream_icon": true
           },
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#000> \uf044 {{ .Working.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#000> \uf046 {{ .Staging.String }}</>{{ end }} ",
-          "foreground": "#2d3436",
+          "foreground": "#000",
           "powerline_symbol": "\ue0b0",
           "background": "#69a5c7",
           "type": "git",
@@ -274,7 +274,7 @@
         {
           "type": "session",
           "style": "diamond",
-          "foreground": "#ffffff",
+          "foreground": "#000",
           "background": "#5d94be",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "<transparent,background>\ue0b2</>",
@@ -308,7 +308,7 @@
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b4",
           "template": " \uf455 {{ .CurrentDate | date .Format }} ",
-          "foreground": "#ffffff",
+          "foreground": "#000",
           "background": "#5384b6",
           "type": "time",
           "style": "diamond",
