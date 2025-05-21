@@ -275,7 +275,7 @@
           "type": "session",
           "style": "diamond",
           "foreground": "#ffffff",
-          "background": "#c386f1",
+          "background": "#5d94be",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "<transparent,background>\ue0b2</>",
           "template": " {{ if .SSHSession }}{{ .UserName }}@{{ .HostName }}{{ end }} "
