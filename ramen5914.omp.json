@@ -278,7 +278,7 @@
           "background": "#c386f1",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "<transparent,background>\ue0b2</>",
-          "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }} "
+          "template": " {{ if .SSHSession }}{{ .UserName }}@{{ .HostName }}{{ end }} "
         },
         {
           "properties": {
