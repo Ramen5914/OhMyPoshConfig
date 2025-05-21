@@ -74,7 +74,7 @@
           },
           "trailing_diamond": "\ue0b4",
           "template": " \ueba2 {{ .FormattedMs }}\u2800",
-          "foreground": "#2d3436",
+          "foreground": "#000",
           "background": "#73b5ce",
           "type": "executiontime",
           "style": "diamond"
