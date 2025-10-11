@@ -240,18 +240,6 @@
         },
         {
           "properties": {
-            "cache_duration": "none"
-          },
-          "leading_diamond": "\ue0b6",
-          "trailing_diamond": "\ue0b4",
-          "template": "\uf308 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
-          "foreground": "#ffffff",
-          "background": "#316ce4",
-          "type": "kubectl",
-          "style": "diamond"
-        },
-        {
-          "properties": {
             "cache_duration": "none",
             "linux": "\ue712",
             "macos": "\ue711",
